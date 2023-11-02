@@ -1,0 +1,635 @@
+*
+{
+    font-size: 16px;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+h1, h2, a, button
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+button
+{
+    cursor: pointer;
+}
+/**/
+form
+{
+    position: relative;
+}
+
+form input
+{
+    border: 1px solid hsl(0, 0%, 0%, 60%);
+}
+
+.email-input-validation-message-container span
+{
+    font-size: 0.7em;
+}
+
+.email-input-validation-message-container
+{
+    position: absolute;
+    display: none;
+}
+
+.first-input-container
+{
+    top: 36px;
+    left: 0;
+}
+
+.second-input-container
+{
+    top: 42px;
+    left: 0;
+}
+/**/
+.illust
+{
+    min-width: 320px;
+    min-height: 240px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 440px;
+}
+
+.illust-b
+{
+    max-width: 500px;
+    max-height: 380px;
+    padding-top: 40px;
+}
+/**/
+/*header*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.header__a-logo
+{
+    display: grid;
+    place-items: center;
+}
+
+[alt="Fylo logo"]
+{
+    width: 85px;
+    height: 25px;
+}
+
+.header__nav
+{
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav a
+{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+}
+/*header*/
+/*main*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article
+{
+    width: 100%;
+}
+
+.main-article__first-section
+{
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    padding-bottom: 140px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: hsl(243, 87%, 12%);
+}
+
+h1
+{
+    font-size: 1.5em;
+    line-height: 1.5;
+    min-width: 300px;
+    padding-top: 27px;
+    padding-bottom: 10px;
+    max-width: 520px;
+}
+
+.main-article__first-section p
+{
+    min-width: 295px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    max-width: 510px;
+}
+
+.main-article__first-section form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 300px;
+    gap: 15px;
+}
+
+.main-article__first-section form input, .main-article__first-section form button
+{
+    height: 40px;
+    border-radius: 5px;
+}
+
+.main-article__first-section form input
+{
+    padding: 0 10px;
+    outline: none;
+}
+
+.main-article__first-section form button
+{
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 0.8em;
+    border: none;
+}
+
+.main-article__first-section form button:hover
+{
+    filter: brightness(1.3);
+}
+/**/
+.main-article__section-gray
+{
+    background-color: hsl(240, 75%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    color: hsl(243, 87%, 12%);
+}
+
+.main-article-section-gray__first-div
+{
+    padding: 40px 20px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-article-section-gray__first-div h2
+{
+    padding-bottom: 10px;
+    padding-top: 80px;
+}
+
+.main-article-section-gray__first-div p
+{
+    font-size: 0.9em;
+    line-height: 1.5;
+    min-width: 330px;
+    max-width: 520px;
+    color: hsl(243, 87%, 12%, 80%);
+}
+/**/
+.main__section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 70px;
+    padding-top: 45px;
+}
+
+.main__section h2
+{
+    font-size: 1.1em;
+}
+
+.main__section p
+{
+    min-width: 285px;
+    max-width: 490px;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.main__section form
+{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    gap: 15px;
+}
+
+.main__section input
+{
+    padding: 0 10px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.main__section input, .main__section button
+{
+    height: 46px;
+}
+
+.main__section button
+{
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 2px;
+}
+
+.main__section button:hover
+{
+    filter: brightness(1.3);
+}
+/**/
+.article__div-see-how-fylo-works-container
+{
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.article__div-see-how-fylo-works-container a
+{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+}
+
+.article__div-see-how-fylo-works-container img
+{
+    width: 18px;
+    height: 18px;
+}
+/**/
+.article-section__div-testimonial-container
+{
+    background-color: hsl(0, 0%, 100%);
+    min-width: 280px;
+    min-height: 170px;
+    padding: 20px 25px;
+    margin-top: 35px;
+    border-radius: 5px;
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.1);
+}
+
+.article-section__div-testimonial-container p
+{
+    font-size: 0.7em;
+    line-height: 1.5;
+    min-width: 250px;
+}
+
+.testimonial-user-data
+{
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.testimonial-user-data div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8px;
+}
+
+.testimonial-user-data div span
+{
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.testimonial-user-data div p
+{
+    font-size: 0.5em;
+}
+
+[alt="Quotes icon"]
+{
+    margin-bottom: 5px;
+    width: 13px;
+    height: 12px;
+}
+
+[alt="Avatar testimonial"]
+{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.main-article-first-section__div-text-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section__text-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*main*/
+/*footer*/
+footer
+{
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(0, 0%, 100%);
+    padding: 0 40px;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__a-logo
+{
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul li a
+{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+ul li a:hover
+{
+    color: hsl(224, 93%, 58%);
+}
+
+.footer-social-logos-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social-logos-container a
+{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+}
+
+.footer-social-logos-container a:hover
+{
+    border-color: hsl(224, 93%, 58%);
+}
+
+.footer__div-attribution-container
+{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__div-contact-info-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__div-contact-info-container div span
+{
+    margin-left: 20px;
+}
+
+.footer__content-div-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+/*footer*/
+@media only screen and (min-width: 900px)
+{
+    /*header*/
+    [alt="Fylo logo"]
+    {
+        width: 166px;
+        height: 49px;
+    }
+
+    header
+    {
+        padding: 20px 72px;
+    }
+
+    .header__nav a 
+    {
+        font-size: 1em;
+    }
+
+    .header__nav
+    {
+        gap: 52px;
+    }
+    /*header*/
+    /*main*/
+    .main-article__first-section
+    {
+        background-image: url(images/bg-curve-desktop.svg);
+        flex-direction: row-reverse;
+        text-align: start;
+        justify-content: space-between;
+        padding: 0 76px;
+        padding-bottom: 260px;
+        padding-top: 80px;
+    }
+
+    .main-article-first-section__div-text-container 
+    {
+        align-items: flex-start;
+    }
+
+    .main-article__first-section form 
+    {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .main-article__first-section form input 
+    {
+        width: 60%;
+    }
+
+    .main-article__first-section form button 
+    {
+        width: 37%;
+    }
+
+    h1
+    {
+        font-size: 2.2em;
+    }
+
+    .main-article__first-section p 
+    {
+        font-size: 1em;
+    }
+
+    .main-article-section-gray__first-div h2 
+    {
+        font-size: 2.2em;
+    }
+
+    .main-article-section-gray__first-div p 
+    {
+        font-size: 1em;
+    }
+
+    .article__div-see-how-fylo-works-container a 
+    {
+        font-size: 1em;
+    }
+
+    .article-section__div-testimonial-container p 
+    {
+        font-size: 0.8em;
+        max-width: 260px;
+    }
+
+    .testimonial-user-data div span 
+    {
+        font-size: 0.7em;
+    }
+
+    .testimonial-user-data div p 
+    {
+        font-size: 0.6em;
+    }
+
+    .main__section h2 
+    {
+        font-size: 2em;
+    }
+
+    .main__section p 
+    {
+        font-size: 1em;
+    }
+
+    .main-article__section-gray
+    {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 55px;
+        padding-bottom: 80px;
+    }
+
+    .article-section__div-testimonial-container
+    {
+        height: 205px;
+    }
+
+    .main-article-section-gray__first-div 
+    {
+        align-items: flex-start;
+    }
+
+    .main__section 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 84px 75px;
+        text-align: start;
+    }
+
+    .main__section form 
+    {
+        width: 452px;
+        margin-right: 37px;
+    }
+
+    .main__section button 
+    {
+        width: 190px;
+    }
+    /*main*/
+    /*footer*/
+    footer
+    {
+        padding: 0 75px;
+        padding-top: 100px;
+        align-items: flex-start;
+    }
+
+    .footer__content-div-container 
+    {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    /*footer*/
+}
